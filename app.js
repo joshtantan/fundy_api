@@ -10,8 +10,8 @@ const usersRouter = require('./routes/users');
 const app = express();
 const port = process.env.SERVER_PORT;
 
-app.use(express.json()); //Used to parse JSON bodies
-app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
+app.use(express.json()); // Used to parse JSON bodies
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
